@@ -17,7 +17,7 @@
    <string notr="true">background-color: rgb(44, 128, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="enter_Button">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -42,7 +42,7 @@ border-color: black;</string>
      <string>ENTRAR</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="user_name">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -63,7 +63,7 @@ border-style: outset;
 border-width: 2px;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="password">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -102,7 +102,7 @@ border-width: 2px;</string>
      <string>Não é cadastrado?</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="cad_Button">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -178,7 +178,7 @@ border-color: black;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="bio_Button">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -205,13 +205,13 @@ border-color: black;</string>
    </widget>
    <zorder>label_3</zorder>
    <zorder>label_2</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
+   <zorder>enter_Button</zorder>
+   <zorder>user_name</zorder>
+   <zorder>password</zorder>
    <zorder>label</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>cad_Button</zorder>
    <zorder>label_4</zorder>
-   <zorder>pushButton_3</zorder>
+   <zorder>bio_Button</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
