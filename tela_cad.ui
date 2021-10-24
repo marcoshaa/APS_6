@@ -6,9 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>512</width>
-    <height>650</height>
+    <width>510</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -17,35 +22,10 @@
    <string notr="true">background-color: rgb(44, 128, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="enter_Button">
+   <widget class="QLineEdit" name="CAD_USER">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>320</y>
-      <width>181</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(60, 60, 179);
-border-style: outset;
-border-width: 2px;
-border-radius: 15px;
-border-color: black;</string>
-    </property>
-    <property name="text">
-     <string>ENTRAR</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="user_name">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
+      <x>110</x>
       <y>120</y>
       <width>261</width>
       <height>31</height>
@@ -63,14 +43,14 @@ border-style: outset;
 border-width: 2px;</string>
     </property>
     <property name="placeholderText">
-     <string>LOGIN</string>
+     <string>DIGITE O NOME </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="password">
+   <widget class="QLineEdit" name="CAD_USER2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>200</y>
+      <x>110</x>
+      <y>170</y>
       <width>261</width>
       <height>31</height>
      </rect>
@@ -87,34 +67,134 @@ border-style: outset;
 border-width: 2px;</string>
     </property>
     <property name="placeholderText">
-     <string>SENHA</string>
+     <string>CONFIRME O NOME </string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLineEdit" name="CAD_SENHA">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>510</y>
-      <width>171</width>
+      <x>110</x>
+      <y>240</y>
+      <width>261</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>15</pointsize>
+      <pointsize>12</pointsize>
      </font>
     </property>
-    <property name="text">
-     <string>Não é cadastrado?</string>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;
+border-style: outset;
+border-width: 2px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>INSIRA A SENHA</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="cad_Button">
+   <widget class="QLineEdit" name="CAD_SENHA2">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>500</y>
-      <width>141</width>
-      <height>41</height>
+      <x>110</x>
+      <y>290</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;
+border-style: outset;
+border-width: 2px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>CONFIRME A SENHA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>login.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>login.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>230</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>padlock.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>280</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>padlock.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BUTT_CAD">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>400</y>
+      <width>161</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -134,102 +214,33 @@ border-color: black;</string>
      <string>CADASTRAR</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>110</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>login.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>190</y>
-      <width>51</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>padlock.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>260</y>
-      <width>271</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bio_Button">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>400</y>
-      <width>181</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(60, 60, 179);
-border-style: outset;
-border-width: 2px;
-border-radius: 15px;
-border-color: black;</string>
-    </property>
-    <property name="text">
-     <string>BIOMETRIA</string>
-    </property>
-   </widget>
    <zorder>label_3</zorder>
-   <zorder>label_2</zorder>
-   <zorder>enter_Button</zorder>
-   <zorder>user_name</zorder>
-   <zorder>password</zorder>
-   <zorder>label</zorder>
-   <zorder>cad_Button</zorder>
-   <zorder>label_4</zorder>
-   <zorder>bio_Button</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_5</zorder>
+   <zorder>CAD_USER</zorder>
+   <zorder>CAD_USER2</zorder>
+   <zorder>CAD_SENHA</zorder>
+   <zorder>CAD_SENHA2</zorder>
+   <zorder>BUTT_CAD</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>512</width>
+     <width>510</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuVOLTAR">
+    <property name="title">
+     <string>VOLTAR</string>
+    </property>
+   </widget>
+   <addaction name="menuVOLTAR"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="ola"/>
  </widget>
  <resources/>
  <connections/>

@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(512, 600)
+        MainWindow.resize(512, 650)
         MainWindow.setStyleSheet("background-color: rgb(44, 128, 255);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
 "border-color: black;")
         self.cad_Button.setObjectName("cad_Button")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(80, 120, 61, 41))
+        self.label_2.setGeometry(QtCore.QRect(80, 110, 71, 51))
         self.label_2.setText("")
         self.label_2.setPixmap(QtGui.QPixmap("c:\\workspaces\\ws-aps\\login.png"))
         self.label_2.setObjectName("label_2")
@@ -120,6 +120,8 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.enter_Button.setText(_translate("MainWindow", "ENTRAR"))
+        self.user_name.setPlaceholderText(_translate("MainWindow", "LOGIN"))
+        self.password.setPlaceholderText(_translate("MainWindow", "SENHA"))
         self.label.setText(_translate("MainWindow", "Não é cadastrado?"))
         self.cad_Button.setText(_translate("MainWindow", "CADASTRAR"))
         self.bio_Button.setText(_translate("MainWindow", "BIOMETRIA"))

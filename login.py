@@ -16,12 +16,17 @@ def logout():
     SecondScreen.close()
     FristScreen.show()
 
+def cad():
+    FristScreen.close()
+    TelaCad.show()
 
 app=QtWidgets.QApplication([])
 FristScreen = uic.loadUi("FristScreen.ui")
 SecondScreen = uic.loadUi("Second_Screen.ui")
+TelaCad = uic.loadUi("tela_cad.ui")
 FristScreen.enter_Button.clicked.connect(view_second_screen)
 SecondScreen.buttonSairT2.clicked.connect(logout)
+FristScreen.cad_Button.clicked.connect(cad)
 FristScreen.password.setEchoMode(QtWidgets.QLineEdit.Password)
 
 
