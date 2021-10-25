@@ -67,7 +67,7 @@ border-style: outset;
 border-width: 2px;</string>
     </property>
     <property name="placeholderText">
-     <string>CONFIRME O NOME </string>
+     <string>DIGITE O LOGIN</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="CAD_SENHA">
