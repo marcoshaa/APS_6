@@ -123,7 +123,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.CAD_USER.setPlaceholderText(_translate("MainWindow", "DIGITE O NOME "))
-        self.CAD_USER2.setPlaceholderText(_translate("MainWindow", "CONFIRME O NOME "))
+        self.CAD_USER2.setPlaceholderText(_translate("MainWindow", "DIGITE O LOGIN"))
         self.CAD_SENHA.setPlaceholderText(_translate("MainWindow", "INSIRA A SENHA"))
         self.CAD_SENHA2.setPlaceholderText(_translate("MainWindow", "CONFIRME A SENHA"))
         self.BUTT_CAD.setText(_translate("MainWindow", "CADASTRAR"))
