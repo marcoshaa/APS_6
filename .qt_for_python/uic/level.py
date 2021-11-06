@@ -14,19 +14,44 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_level_1(object):
     def setupUi(self, level_1):
         level_1.setObjectName("level_1")
-        level_1.resize(515, 600)
+        level_1.resize(699, 725)
         level_1.setStyleSheet("background-color: rgb(44, 128, 255);")
         self.centralwidget = QtWidgets.QWidget(level_1)
         self.centralwidget.setObjectName("centralwidget")
         self.intro_level1 = QtWidgets.QLabel(self.centralwidget)
-        self.intro_level1.setGeometry(QtCore.QRect(80, 50, 221, 101))
+        self.intro_level1.setGeometry(QtCore.QRect(130, 0, 321, 31))
         font = QtGui.QFont()
-        font.setPointSize(50)
+        font.setPointSize(20)
         self.intro_level1.setFont(font)
         self.intro_level1.setObjectName("intro_level1")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(20, 60, 351, 41))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(490, 620, 141, 31))
+        self.pushButton.setStyleSheet("background-color: rgb(60, 60, 179);\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: black;")
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(130, 610, 141, 31))
+        self.pushButton_2.setStyleSheet("background-color: rgb(60, 60, 179);\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: black;")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
+        self.textEdit.setGeometry(QtCore.QRect(40, 110, 611, 381))
+        self.textEdit.setObjectName("textEdit")
         level_1.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(level_1)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 515, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 699, 21))
         self.menubar.setObjectName("menubar")
         level_1.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(level_1)
@@ -39,4 +64,15 @@ class Ui_level_1(object):
     def retranslateUi(self, level_1):
         _translate = QtCore.QCoreApplication.translate
         level_1.setWindowTitle(_translate("level_1", "MainWindow"))
-        self.intro_level1.setText(_translate("level_1", "nivel 1"))
+        self.intro_level1.setText(_translate("level_1", "Produção Agricola"))
+        self.label.setText(_translate("level_1", "Conheça o Grupo Andre MAGGI"))
+        self.pushButton.setText(_translate("level_1", "PushButton"))
+        self.pushButton_2.setText(_translate("level_1", "PushButton"))
+        self.textEdit.setHtml(_translate("level_1", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">    As atividades do grupo se inicou em São Miguel do Iguaçú (PR). Sua renda baseava-se em produção de soja, sementes e na comercialização de safras. Em 1979 com a aquisição de terras no Mato Grosso possibilitou a expansão de suas produçoes de soja e implementação do algodão e do milho a safras.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">    Após a aquisição, o grupo mudo sua sede para Rondonópolis (MT)</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p></body></html>"))
