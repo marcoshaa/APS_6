@@ -6,22 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>699</width>
-    <height>725</height>
+    <width>692</width>
+    <height>708</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(44, 128, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="intro_level1">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>0</y>
+      <x>250</x>
+      <y>10</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -38,11 +38,17 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>60</y>
+      <x>190</x>
+      <y>40</y>
       <width>351</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>351</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="font">
      <font>
@@ -56,14 +62,14 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>620</y>
+      <x>480</x>
+      <y>570</y>
       <width>141</width>
-      <height>31</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(60, 60, 179);
+     <string notr="true">
 border-style: outset;
 border-width: 2px;
 border-radius: 15px;
@@ -77,13 +83,13 @@ border-color: black;</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>610</y>
+      <y>560</y>
       <width>141</width>
-      <height>31</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(60, 60, 179);
+     <string notr="true">
 border-style: outset;
 border-width: 2px;
 border-radius: 15px;
@@ -96,36 +102,66 @@ border-color: black;</string>
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>110</y>
+      <x>50</x>
+      <y>120</y>
       <width>611</width>
       <height>381</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+</string>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;	As atividades do grupo se inicou em São Miguel do Iguaçú (PR). Sua renda baseava-se em produção de soja, sementes e na comercialização de safras. Em 1979 com a aquisição de terras no Mato Grosso possibilitou a expansão de suas produçoes de soja e implementação do algodão e do milho a safras.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;	Após a aquisição, o grupo mudo sua sede para Rondonópolis (MT)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;	As atividades do grupo se inicou em São Miguel do Iguaçú (PR). Sua renda baseava-se em produção de soja, sementes e na comercialização de safras. Em 1979 com a aquisição de terras no Mato Grosso possibilitou a expansão de suas produçoes de soja e implementação do algodão e do milho a safras.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;	Após a aquisição, o grupo mudo sua sede para Rondonópolis (MT), onde foi realizando aquisições de terras e aumentando o numero de fazendas. Atualmente o grupo conta com 10 fazendas apenas no territorio do Mato Grosso, estando nos municipios de; Sapezal, Campo Novo Dos Parecis, Querência, Itiquira e Rondonópolis.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;	O grupo vem aumentando gradualmente o volume de suas safras. A nas safras 2016/2017, a Soja em uma área de 163 mil hectares produziu 569 toneladas; Semente de Soja em uma área de 10,20 mil hectares produziu 20,36 toneladas; Milho em uma área  de 63,24 mil hectares porduziu 357,48 toneladas; Algodão em uma área de 52,69 mil hectares produziu 233,17 toneladas.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;	A empresa atualmente fornece para o mercado interno e externo, tendo frota de caminhões para o abastecimento interno, e possuindo rotas maritimas para exportação. A empresa AMAGGI na divisão agro são mais de 3.000 funcionarios entre produção e na comercialização.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;	&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;	Com a demanda da expanção houve um aumento na frota dos maquinarios, na divisão agro possuem 30 colheitadeiras axial, 15 tratores, 15 plantadeiras de 24 linhase mais de 21 autopropelidos.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>699</width>
-     <height>21</height>
-    </rect>
-   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>711</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="img.qrc">:/img/soja.jfif</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>intro_level1</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>textEdit</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
  <connections/>
 </ui>
