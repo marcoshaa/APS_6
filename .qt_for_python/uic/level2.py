@@ -14,19 +14,46 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_level_2(object):
     def setupUi(self, level_2):
         level_2.setObjectName("level_2")
-        level_2.resize(531, 600)
-        level_2.setStyleSheet("background-color: rgb(44, 128, 255);")
+        level_2.resize(701, 645)
+        level_2.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(level_2)
         self.centralwidget.setObjectName("centralwidget")
         self.intro_level2 = QtWidgets.QLabel(self.centralwidget)
-        self.intro_level2.setGeometry(QtCore.QRect(80, 50, 221, 101))
+        self.intro_level2.setGeometry(QtCore.QRect(0, -10, 701, 601))
         font = QtGui.QFont()
         font.setPointSize(50)
+        font.setBold(True)
+        font.setWeight(75)
         self.intro_level2.setFont(font)
+        self.intro_level2.setStyleSheet("")
+        self.intro_level2.setText("")
+        self.intro_level2.setPixmap(QtGui.QPixmap(":/imgFund/download.jfif"))
+        self.intro_level2.setScaledContents(True)
         self.intro_level2.setObjectName("intro_level2")
+        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser.setGeometry(QtCore.QRect(20, 110, 651, 361))
+        self.textBrowser.setObjectName("textBrowser")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(190, 30, 331, 41))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(290, 510, 141, 61))
+        self.pushButton_3.setStyleSheet("background-color: rgb(0, 102, 0);\n"
+"alternate-background-color: rgb(0, 85, 0);\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 15px;\n"
+"border-color: black;")
+        self.pushButton_3.setObjectName("pushButton_3")
         level_2.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(level_2)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 531, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 701, 26))
         self.menubar.setObjectName("menubar")
         level_2.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(level_2)
@@ -39,4 +66,11 @@ class Ui_level_2(object):
     def retranslateUi(self, level_2):
         _translate = QtCore.QCoreApplication.translate
         level_2.setWindowTitle(_translate("level_2", "MainWindow"))
-        self.intro_level2.setText(_translate("level_2", "nivel 2"))
+        self.textBrowser.setHtml(_translate("level_2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label.setText(_translate("level_2", "INFORMAÇÃO FISCAL"))
+        self.pushButton_3.setText(_translate("level_2", "PushButton"))
+import imgLv2_rc
