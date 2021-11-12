@@ -32,6 +32,10 @@ class Ui_level_2(object):
         self.intro_level2.setObjectName("intro_level2")
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser.setGeometry(QtCore.QRect(20, 110, 651, 361))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        self.textBrowser.setFont(font)
         self.textBrowser.setObjectName("textBrowser")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(190, 30, 331, 41))
@@ -69,8 +73,10 @@ class Ui_level_2(object):
         self.textBrowser.setHtml(_translate("level_2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\';\">*Incentivos Fiscais: E</span><span style=\" font-family:\'Ubuntu\',\'Helvetica\',\'Arial\',\'sans-serif\'; color:#333333; background-color:#ffffff;\">stão isenção do Imposto sobre a Propriedade Territorial Rural (ITR) para pequenos proprietários ou possuidores de imóveis até quatro módulos fiscais e desconto de 50% do ITR para os demais produtores. Prevê ainda desconto na base de cálculo do Imposto de Renda (IR) dos gastos com proteção dos recursos hídricosestão isenção do Imposto sobre a Propriedade Territorial Rural (ITR) para pequenos proprietários ou possuidores de imóveis até quatro módulos fiscais e desconto de 50% do ITR para os demais produtores. Prevê ainda desconto na base de cálculo do Imposto de Renda (IR) dos gastos com proteção dos recursos hídricos.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Ubuntu\',\'Helvetica\',\'Arial\',\'sans-serif\'; color:#333333;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\';\">*Impostos municipais pagos: </span></p></body></html>"))
         self.label.setText(_translate("level_2", "INFORMAÇÃO FISCAL"))
         self.pushButton_3.setText(_translate("level_2", "PushButton"))
 import imgLv2_rc

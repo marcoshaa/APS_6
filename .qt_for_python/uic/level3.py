@@ -23,8 +23,7 @@ class Ui_level_3(object):
         font = QtGui.QFont()
         font.setPointSize(50)
         self.intro_Level3.setFont(font)
-        self.intro_Level3.setStyleSheet("\n"
-"")
+        self.intro_Level3.setStyleSheet("")
         self.intro_Level3.setText("")
         self.intro_Level3.setPixmap(QtGui.QPixmap(":/nivel3/armMaggi.jpg"))
         self.intro_Level3.setScaledContents(True)
@@ -47,7 +46,7 @@ class Ui_level_3(object):
 "border-color: black;")
         self.label.setObjectName("label")
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(20, 110, 381, 401))
+        self.textBrowser.setGeometry(QtCore.QRect(20, 110, 421, 401))
         self.textBrowser.setObjectName("textBrowser")
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_4.setGeometry(QtCore.QRect(530, 440, 141, 61))
@@ -74,5 +73,10 @@ class Ui_level_3(object):
         _translate = QtCore.QCoreApplication.translate
         level_3.setWindowTitle(_translate("level_3", "MainWindow"))
         self.label.setText(_translate("level_3", "Agrotóxico"))
+        self.textBrowser.setHtml(_translate("level_3", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">    O grupo AMAGGI não faz apenas o consumo de agrotóximos como o Glisofato; eles realizam a venda de produtos para reabiliar o solo e manutenção da plantação. </span></p></body></html>"))
         self.pushButton_4.setText(_translate("level_3", "PushButton"))
 import imgNivel3_rc
