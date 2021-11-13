@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(15)
         MainWindow.setFont(font)
-        MainWindow.setStyleSheet("background-color: rgb(44, 128, 255);")
+        MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.CAD_USER = QtWidgets.QLineEdit(self.centralwidget)
@@ -75,6 +75,7 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName("label_6")
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
         self.label_7.setGeometry(QtCore.QRect(70, 230, 51, 51))
+        self.label_7.setStyleSheet("")
         self.label_7.setText("")
         self.label_7.setPixmap(QtGui.QPixmap("c:\\workspaces\\ws-aps\\padlock.png"))
         self.label_7.setObjectName("label_7")
@@ -84,19 +85,48 @@ class Ui_MainWindow(object):
         self.label_3.setPixmap(QtGui.QPixmap("c:\\workspaces\\ws-aps\\padlock.png"))
         self.label_3.setObjectName("label_3")
         self.BUTT_CAD = QtWidgets.QPushButton(self.centralwidget)
-        self.BUTT_CAD.setGeometry(QtCore.QRect(140, 400, 161, 61))
+        self.BUTT_CAD.setGeometry(QtCore.QRect(160, 440, 161, 61))
         font = QtGui.QFont()
         font.setPointSize(15)
         self.BUTT_CAD.setFont(font)
-        self.BUTT_CAD.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"background-color: rgb(60, 60, 179);\n"
+        self.BUTT_CAD.setStyleSheet("background-color: rgb(85, 170, 0);\n"
+"\n"
 "border-radius: 15px;\n"
 "border-style: outset;\n"
 "border-width: 2px;\n"
 "border-color: black;")
         self.BUTT_CAD.setObjectName("BUTT_CAD")
-        self.label_3.raise_()
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(0, 0, 511, 571))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap(":/imgCad/telacad.png"))
+        self.label.setScaledContents(True)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(60, 350, 271, 41))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 15px;\n"
+"border-style: outset;\n"
+"border-width: 2px;")
+        self.label_2.setObjectName("label_2")
+        self.nAcesso = QtWidgets.QLineEdit(self.centralwidget)
+        self.nAcesso.setGeometry(QtCore.QRect(340, 350, 51, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.nAcesso.setFont(font)
+        self.nAcesso.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius: 15px;\n"
+"border-style: outset;\n"
+"border-width: 2px;")
+        self.nAcesso.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.nAcesso.setPlaceholderText("")
+        self.nAcesso.setObjectName("nAcesso")
+        self.label.raise_()
         self.label_7.raise_()
+        self.label_3.raise_()
         self.label_6.raise_()
         self.label_5.raise_()
         self.CAD_USER.raise_()
@@ -104,9 +134,11 @@ class Ui_MainWindow(object):
         self.CAD_SENHA.raise_()
         self.CAD_SENHA2.raise_()
         self.BUTT_CAD.raise_()
+        self.label_2.raise_()
+        self.nAcesso.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 510, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 510, 26))
         self.menubar.setObjectName("menubar")
         self.menuVOLTAR = QtWidgets.QMenu(self.menubar)
         self.menuVOLTAR.setObjectName("menuVOLTAR")
@@ -127,4 +159,6 @@ class Ui_MainWindow(object):
         self.CAD_SENHA.setPlaceholderText(_translate("MainWindow", "INSIRA A SENHA"))
         self.CAD_SENHA2.setPlaceholderText(_translate("MainWindow", "CONFIRME A SENHA"))
         self.BUTT_CAD.setText(_translate("MainWindow", "CADASTRAR"))
+        self.label_2.setText(_translate("MainWindow", "Defina o nivel de acesso"))
         self.menuVOLTAR.setTitle(_translate("MainWindow", "VOLTAR"))
+import imgcad_rc

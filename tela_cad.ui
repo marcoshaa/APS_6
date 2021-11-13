@@ -19,7 +19,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(44, 128, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="CAD_USER">
@@ -165,6 +165,9 @@ border-width: 2px;</string>
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -191,8 +194,8 @@ border-width: 2px;</string>
    <widget class="QPushButton" name="BUTT_CAD">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>400</y>
+      <x>160</x>
+      <y>440</y>
       <width>161</width>
       <height>61</height>
      </rect>
@@ -203,8 +206,8 @@ border-width: 2px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-background-color: rgb(60, 60, 179);
+     <string notr="true">background-color: rgb(85, 170, 0);
+
 border-radius: 15px;
 border-style: outset;
 border-width: 2px;
@@ -214,8 +217,79 @@ border-color: black;</string>
      <string>CADASTRAR</string>
     </property>
    </widget>
-   <zorder>label_3</zorder>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>511</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="imgcad.qrc">:/imgCad/telacad.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>350</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;
+border-style: outset;
+border-width: 2px;</string>
+    </property>
+    <property name="text">
+     <string>Defina o nivel de acesso</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nAcesso">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>350</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;
+border-style: outset;
+border-width: 2px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
    <zorder>label_7</zorder>
+   <zorder>label_3</zorder>
    <zorder>label_6</zorder>
    <zorder>label_5</zorder>
    <zorder>CAD_USER</zorder>
@@ -223,6 +297,8 @@ border-color: black;</string>
    <zorder>CAD_SENHA</zorder>
    <zorder>CAD_SENHA2</zorder>
    <zorder>BUTT_CAD</zorder>
+   <zorder>label_2</zorder>
+   <zorder>nAcesso</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -230,7 +306,7 @@ border-color: black;</string>
      <x>0</x>
      <y>0</y>
      <width>510</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuVOLTAR">
@@ -242,6 +318,8 @@ border-color: black;</string>
   </widget>
   <widget class="QStatusBar" name="ola"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="imgcad.qrc"/>
+ </resources>
  <connections/>
 </ui>

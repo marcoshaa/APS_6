@@ -102,7 +102,7 @@ class Ui_MainWindow(object):
         self.label_5.setGeometry(QtCore.QRect(70, 0, 311, 171))
         self.label_5.setStyleSheet("")
         self.label_5.setText("")
-        self.label_5.setTextFormat(QtCore.Qt.RichText)
+        self.label_5.setTextFormat(QtCore.Qt.AutoText)
         self.label_5.setPixmap(QtGui.QPixmap(":/maggi/imgTela1.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setObjectName("label_5")

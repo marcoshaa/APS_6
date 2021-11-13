@@ -36,13 +36,14 @@ def salveCad():
     cadLogin = TelaCad.CAD_USER2.text()
     cadSenha = TelaCad.CAD_SENHA.text()
     cadSenha2 = TelaCad.CAD_SENHA2.text()
-    
+    nAcesso = TelaCad.nAcesso.text()
+
     if(cadSenha == cadSenha2):
         try:
             banco = sqlite3.connect('banco_cad.db') 
-            cursor = banco.cursor()
-            cursor.execute('CREATE TABLE IF NOT EXISTS cadastro (nome text,login text,senha text')
-            cursor.execute("INSERT INTO cadastro VALUES('"+cadName+"','"+cadLogin+"','"+cadSenha+"')") 
+            cursor = banco.cursor()#realiza query no bd
+            cursor.execute('CREATE TABLE IF NOT EXISTS cadastro (nome text,login text,senha text,nivel int')
+            cursor.execute("INSERT INTO cadastro VALUES('"+cadName+"','"+cadLogin+"','"+cadSenha+","+nAcesso+"')") 
 
             banco.commit()
             banco.close()
@@ -54,17 +55,21 @@ def salveCad():
     else:
         TelaCad.CAD_INF.setText("Senhas divergentes")
 
+
         
 
 app=QtWidgets.QApplication([])
 FristScreen = uic.loadUi("FristScreen.ui")
-SecondScreen = uic.loadUi("Second_Screen.ui")
 TelaCad = uic.loadUi("tela_cad.ui")
 FristScreen.enter_Button.clicked.connect(view_second_screen)
-SecondScreen.buttonSairT2.clicked.connect(logout)
 FristScreen.cad_Button.clicked.connect(cad)
 FristScreen.password.setEchoMode(QtWidgets.QLineEdit.Password)
 TelaCad.BUTT_CAD.clicked.connect(salveCad)
+level1 = uic.loadUi("level.ui")
+level2 = uic.loadUi("level2.ui")
+level3 = uic.loadUi("level3.ui")
+
+
 
 FristScreen.show()
 app.exec()

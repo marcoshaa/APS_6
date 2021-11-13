@@ -228,7 +228,7 @@ border-color: black;</string>
      <string/>
     </property>
     <property name="textFormat">
-     <enum>Qt::RichText</enum>
+     <enum>Qt::AutoText</enum>
     </property>
     <property name="pixmap">
      <pixmap resource="im_1.qrc">:/maggi/imgTela1.png</pixmap>
